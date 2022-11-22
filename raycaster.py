@@ -214,14 +214,11 @@ def conwayGameOfLife(celdas, tamano, actualizarse):
                 if actualizarse == True:
                     color = purple
 
-            if celdasVivas <= 3:
+            if 2 <= celdasVivas <= 3:
                 celulasVacias[i, j] = 1
                 if actualizarse == True:
                     color = yellow
-            if celdasVivas >= 2:
-                celulasVacias[i, j] = 1
-                if actualizarse == True:
-                    color = yellow
+
         else:
             if celdasVivas == 3:
                 celulasVacias[i, j] = 1
